@@ -17,9 +17,10 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 */
 
+using System.Numerics;
+using System.Collections;
 
 public class Solution{
-
     public int[] TwoSum(int[] nums, int target){
         var numMap = new Dictionary<int,int>();
         var result = new int[2];
