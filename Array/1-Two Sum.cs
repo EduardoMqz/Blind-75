@@ -21,7 +21,7 @@ using System.Numerics;
 using System.Collections;
 
 public class Solution{
-    public int[] TwoSum(int[] nums, int target){
+    public int[] twoSum(int[] nums, int target){
         var numMap = new Dictionary<int,int>();
         var result = new int[2];
         for (int i = 0; i < nums.Length; i++){

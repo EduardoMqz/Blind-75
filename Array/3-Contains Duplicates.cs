@@ -18,7 +18,7 @@ using System.Collections;
 using System.Numerics;
 
 public class SolutionIII{
-    public bool ContainsDuplicate(int[] nums){
+    public bool containsDuplicate(int[] nums){
         var visited = new HashSet<int>();
         for (int i = 0; i < nums.Length; i++){
             if(visited.Contains(nums[i])){
