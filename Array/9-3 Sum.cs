@@ -27,11 +27,39 @@ using System;
 using System.Collections;
 
 public class SolutionIX{
-    public List<List<int>> threeSum(int[] nums){
-        System.Array.Sort(nums);
-
-
-        return null;
+    public IList<IList<int>> threeSum(int[] nums){
+        Array.Sort(nums);
+        IList<IList<int>> triplets = new List<IList<int>>();
+        for (int i = 0; i <= nums.Length-3; i++){
+            if (i == 0 || nums[i] != nums[i-1]){
+                int left = i+1, right = nums.Length-1;
+                int target = 0-nums[i];
+                while(left<right){
+                    if(nums[left] + nums[right] == target){
+                        List<int> triplet = new List<int>();
+                        triplet.Add(nums[i]);
+                        triplet.Add(nums[left]);
+                        triplet.Add(nums[right]);
+                        triplets.Add(triplet);
+                        while(left < nums.Length-1 && nums[left] == nums[left+1]){
+                            left++;
+                        }
+                        while(right > 0 && nums[right] == nums[right-1]){
+                            right--;
+                        }
+                        left++;
+                        right--;
+                    }else if (nums[left]+nums[right]<target){
+                        left++;
+                    }else{
+                        right--;
+                    }
+                }
+                
+            }
+            
+        }
+        return triplets;
     }
 
 }
