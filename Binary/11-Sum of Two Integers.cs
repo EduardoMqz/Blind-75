@@ -19,6 +19,5 @@ public class SolutionXI{
             b = carry << 1;
         }
         return a;  
-    }
-    
+    }   
 }
