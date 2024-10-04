@@ -29,7 +29,7 @@ public class SolutionXV{
         for(int i =1; i <= 32; i++){
             reverse = reverse << 1;
             reverse = reverse | (1 & n);
-            n = n << 1;
+            n = n >> 1;
         }
         return reverse;
     }
