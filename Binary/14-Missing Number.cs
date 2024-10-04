@@ -24,8 +24,7 @@ public class SolutionXIV{
     public int missingNumber(int[] nums){
         int missingNum = nums.Length;
         for (int i = 0; i < nums.Length; i++){
-        missingNum = missingNum ^ nums[i] ^ i;
- 
+            missingNum = missingNum ^ nums[i] ^ i;
         }
         return missingNum;
     }
