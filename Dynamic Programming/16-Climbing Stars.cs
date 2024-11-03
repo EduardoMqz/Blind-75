@@ -47,6 +47,7 @@ for(int i = 1; i <= n-2; i++){
     first = second;
     second = temp
 }
-return second;
+return second; 
+*/
 
     
