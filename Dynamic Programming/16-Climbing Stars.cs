@@ -27,7 +27,7 @@ public class SolutionXVI{
         public int ClimbStairs(int n) {
             if(n <= 2)
                 return n;
-            List<int> dp = new List<int>();
+            int[] dp = new int[n+1];
             dp[1] = 1;
             dp[2] = 2;
 
