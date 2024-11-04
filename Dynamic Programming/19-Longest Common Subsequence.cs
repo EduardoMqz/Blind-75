@@ -26,7 +26,7 @@ using System;
 
 namespace Dynamic_Programming;
 
-public class _19_Longest_Common_Subsequence{
+public class SolutionXIX{
     public int LongestCommonSubsequence(string text1, string text2) {
 
        int[] dp = new int[text2.Length + 1];
@@ -43,7 +43,5 @@ public class _19_Longest_Common_Subsequence{
             }
         }
         return dp[text2.Length];
-        
     }
-
 }
